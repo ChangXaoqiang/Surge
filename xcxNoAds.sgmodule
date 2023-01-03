@@ -17,7 +17,8 @@
 
 # > 畅停e行
 ^https?:\/\/qnimg\.zowoyoo\.com\/ - reject
-^https:\/\/ct-bucket\.oss-cn-shenzhen\.aliyuncs\.com\/platform\/pic\/advertising\/*.png - reject
+^https?:\/\/ct-bucket\.oss-cn-shenzhen\.aliyuncs\.com\/platform\/pic\/advertising\/*.png - reject
+^https?:\/\/vectorsdk\.map\.qq\.com\/ - reject
 
 [MITM]
-hostname = %APPEND% ct-bucket.oss-cn-shenzhen.aliyuncs.com, qnimg.zowoyoo.com, resource.wesure100.com, ump.ems.com.cn, wxa.wxs.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
+hostname = %APPEND% vectorsdk.map.qq.com, ct-bucket.oss-cn-shenzhen.aliyuncs.com, qnimg.zowoyoo.com, resource.wesure100.com, ump.ems.com.cn, wxa.wxs.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
