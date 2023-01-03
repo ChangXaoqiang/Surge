@@ -1,0 +1,63 @@
+#!name=常用App去广告
+#!desc=常用App去广告2023.1.3
+
+
+[URL Rewrite]
+# 微信小程序：车来了
+^https?:\/\/ipv4\.gdt\.qq\.com\/ - reject
+^https?:\/\/yun-hl\.3g\.qq\.com\/ - reject
+^https?:\/\/badjs\.weixinbridge\.com\/ - reject
+^https?:\/\/wxa\.wxs\.qq\.com\/ - reject
+^https?:\/\/res\.wx\.qq\.com\/ - reject
+# QQ空间/QQ
+^https?:\/\/h\.trace\.qq\.com\/ - reject
+^https?:\/\/heic\.alicdn\.com\/ - reject
+^https?:\/\/xc\.gdt\.qq\.com\/ - reject
+^https?:\/\/lp\.pinduoduo\.com\/ - reject
+^https?:\/\/lpcdn\.pinduoduo\.com\/ - reject
+^https?:\/\/pgdt\.gtimg\.cn\/ - reject
+# 暂时想不起来是哪个App了
+^https?:\/\/kepler\.jd\.com\/ - reject
+^https?:\/\/adashxgc\.ut\.taobao\.com\/ - reject
+^https?:\/\/api\.zuihuimai\.com\/ - reject
+# 手机网页版百度问一问
+^https?:\/\/wen\.baidu\.com\/ - reject
+^https?:\/\/wyw-static\.cdn\.bcebos\.com\/ - reject
+^https?:\/\/wyw-base\.cdn\.bcebos\.com\/ - reject
+# 彩云天气
+^https?:\/\/cdn-w\.caiyunapp\.com\/ - reject
+^https?:\/\/ad\.caiyunapp\.com\/ - reject
+# 妈妈网孕育
+^https?:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ - reject
+^https?:\/\/cdn-act2\.cdnmama\.com\/ - reject
+^https?:\/\/pt-images*\.cdnmama\.com\/ - reject
+^https?:\/\/qimg\.cdnmama\.com\/ - reject
+# 美团外卖
+^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg - reject
+^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - reject
+# 饿了么
+^https?:\/\/cube\.elemecdn\.com\/ - reject
+# 高德地图
+^https?:\/\/m5.amap.com\/ws\/valueadded\/ - reject
+^https:\/\/sns\.amap\.com\/ws\/msgbox\/ - reject
+^https?:\/\/optimus-ads\.amap\.com\/ - reject
+^https?:\/\/aid\.m\.taobao\.com\/ - reject
+^https?:\/\/cache\.amap\.com\/ - reject
+# 百度地图
+^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
+^https?:\/\/dss0\.bdstatic\.com\/ - reject
+^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/ - reject
+^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/ - reject
+^https?:\/\/g\.cn\.miaozhen\.com\/ - reject
+# 12306
+^https?:\/\/ad\.12306\.cn\/ - reject
+# 去哪网
+^https:\/\/qde\.qunar\.com\/preload - reject
+# 飞猪旅行
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.allresource\/ - reject
+# 谷歌
+^https?://(www.)?(g|google).cn https://www.google.com 302
+
+[MITM]
+h2 = true
+hostname = ipv4.gdt.qq.com, yun-hl.3g.qq.com, badjs.weixinbridge.com, wxa.wxs.qq.com, res.wx.qq.com, sns.amap.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, wen.baidu.com, wyw-static.cdn.bcebos.com, wyw-base.cdn.bcebos.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com
