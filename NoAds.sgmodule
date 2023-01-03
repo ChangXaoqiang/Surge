@@ -6,9 +6,9 @@
 # 微信小程序：车来了
 ^https?:\/\/ipv4\.gdt\.qq\.com\/ - reject
 ^https?:\/\/yun-hl\.3g\.qq\.com\/ - reject
-^https?:\/\/badjs\.weixinbridge\.com\/ - reject
-^https?:\/\/wxa\.wxs\.qq\.com\/ - reject
-^https?:\/\/res\.wx\.qq\.com\/ - reject
+#^https?:\/\/badjs\.weixinbridge\.com\/ - reject
+#^https?:\/\/wxa\.wxs\.qq\.com\/ - reject
+#^https?:\/\/res\.wx\.qq\.com\/ - reject
 # QQ空间/QQ
 ^https?:\/\/h\.trace\.qq\.com\/ - reject
 ^https?:\/\/heic\.alicdn\.com\/ - reject
