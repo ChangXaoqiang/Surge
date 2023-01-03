@@ -2,16 +2,20 @@
 #!desc=微信小程序去广告（自用）2023.1.4 @ChangXiaoqiang
 
 [URL Rewrite]
-# 车来了
+# > 车来了
 ^https?:\/\/ipv4\.gdt\.qq\.com\/ - reject
 ^https?:\/\/yun-hl\.3g\.qq\.com\/ - reject
 ^https?:\/\/wxa\.wxs\.qq\.com\/ - reject
 ^https?:\/\/sdk\.e\.qq\.com\/ - reject
-^https?:\/\/res\.wx\.qq\.com\/ - reject
-^https?:\/\/res\.servicewechat\.com\/ - reject
+#^https?:\/\/res\.wx\.qq\.com\/ - reject
+#^https?:\/\/res\.servicewechat\.com\/ - reject
 
-# EMS中国邮政速递物流
+# > EMS中国邮政速递物流
 ^https?:\/\/ump\.ems\.com\.cn\/mailAd\/pageModuleImg\/*.jpeg - reject
 
+# > 腾讯微保
+^https?:\/\/resource\.wesure100\.com\/AT-Config\/config\/*.gif - reject
+^https?:\/\/resource\.wesure100\.com\/front\/prd\/image\/add_tip_unpay.png - reject
+
 [MITM]
-hostname = %APPEND% ump.ems.com.cn, wxa.wxs.qq.com, res.servicewechat.com, res.wx.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
+hostname = %APPEND% resource.wesure100.com, ump.ems.com.cn, wxa.wxs.qq.com, res.servicewechat.com, res.wx.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
