@@ -1,5 +1,5 @@
 #!name=常用App去广告
-#!desc=常用App去广告（自用）2023.1.3 @ChangXiaoqiang
+#!desc=常用App去广告（自用）2023.1.5 @ChangXiaoqiang
 #!system=ios
 
 [URL Rewrite]
@@ -51,9 +51,8 @@
 ^https?:\/\/g\.cn\.miaozhen\.com\/ - reject
 
 # 12306
-^https?:\/\/ad\.12306\.cn\/ - reject
 ^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - reject
-^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList\/ - reject
+^https?:\/\/ad\.12306\.cn\/ad\/ser\/ - reject
 
 # 去哪网
 ^https:\/\/qde\.qunar\.com\/preload - reject
