@@ -7,7 +7,7 @@
 ^https?:\/\/yun-hl\.3g\.qq\.com\/ - reject
 ^https?:\/\/wxa\.wxs\.qq\.com\/ - reject
 ^https?:\/\/sdk\.e\.qq\.com\/ - reject
-^http?:\/\/wxsnsdythumb.wxs.qq.com\/141/20204\/snscosdownload\/SZ\/reserved\/ - reject
+^http?:\/\/wxsnsdythumb\.wxs\.qq\.com\/141\/ - reject
 
 # > EMS中国邮政速递物流
 ^https?:\/\/ump\.ems\.com\.cn\/mailAd\/pageModuleImg\/*.jpeg - reject
