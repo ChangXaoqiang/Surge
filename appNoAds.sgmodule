@@ -52,6 +52,8 @@
 
 # 12306
 ^https?:\/\/ad\.12306\.cn\/ - reject
+^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - reject
+^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList\/ - reject
 
 # 去哪网
 ^https:\/\/qde\.qunar\.com\/preload - reject

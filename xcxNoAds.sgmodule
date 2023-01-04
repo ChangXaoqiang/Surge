@@ -7,6 +7,7 @@
 ^https?:\/\/yun-hl\.3g\.qq\.com\/ - reject
 ^https?:\/\/wxa\.wxs\.qq\.com\/ - reject
 ^https?:\/\/sdk\.e\.qq\.com\/ - reject
+^http?:\/\/wxsnsdythumb.wxs.qq.com\/141/20204\/snscosdownload\/SZ\/reserved\/ - reject
 
 # > EMS中国邮政速递物流
 ^https?:\/\/ump\.ems\.com\.cn\/mailAd\/pageModuleImg\/*.jpeg - reject
@@ -21,4 +22,4 @@
 ^https?:\/\/vectorsdk\.map\.qq\.com\/ - reject
 
 [MITM]
-hostname = %APPEND% vectorsdk.map.qq.com, ct-bucket.oss-cn-shenzhen.aliyuncs.com, qnimg.zowoyoo.com, resource.wesure100.com, ump.ems.com.cn, wxa.wxs.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
+hostname = %APPEND% wxsnsdythumb.wxs.qq.com, vectorsdk.map.qq.com, ct-bucket.oss-cn-shenzhen.aliyuncs.com, qnimg.zowoyoo.com, resource.wesure100.com, ump.ems.com.cn, wxa.wxs.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
