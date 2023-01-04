@@ -34,11 +34,14 @@
 ^https?:\/\/cube\.elemecdn\.com\/ - reject
 
 # 高德地图
-^https?:\/\/m5.amap.com\/ws\/valueadded\/ - reject
+^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - reject
 ^https:\/\/sns\.amap\.com\/ws\/msgbox\/ - reject
 ^https?:\/\/optimus-ads\.amap\.com\/ - reject
 ^https?:\/\/aid\.m\.taobao\.com\/ - reject
 ^https?:\/\/cache\.amap\.com\/ - reject
+^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\? - reject
+^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page(-location)?\? - reject
+^https?:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\? - reject
 
 # 百度地图
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
@@ -61,4 +64,4 @@
 12306去广告 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% sns.amap.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com
+hostname = %APPEND% h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com, sns.amap.com
