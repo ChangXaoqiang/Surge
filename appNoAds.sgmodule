@@ -39,9 +39,7 @@
 ^https?:\/\/optimus-ads\.amap\.com\/ - reject
 ^https?:\/\/aid\.m\.taobao\.com\/ - reject
 ^https?:\/\/cache\.amap\.com\/ - reject
-^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-assets\? - reject
-^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page(-location)?\? - reject
-^https?:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\? - reject
+^https?:\/\/m5\.amap\.com\/ - reject
 
 # 百度地图
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
