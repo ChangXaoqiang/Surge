@@ -35,7 +35,7 @@
 
 # 高德地图
 ^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - reject
-^https:\/\/sns\.amap\.com\/ws\/msgbox\/ - reject
+^https?:\/\/sns\.amap\.com\/ws\/msgbox\/ - reject
 ^https?:\/\/optimus-ads\.amap\.com\/ - reject
 ^https?:\/\/aid\.m\.taobao\.com\/ - reject
 ^https?:\/\/cache\.amap\.com\/ - reject
