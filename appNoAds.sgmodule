@@ -1,6 +1,5 @@
-#!name=常用App去广告
-#!desc=常用App去广告（自用）2023.1.5 @ChangXiaoqiang
-#!system=ios
+#!name=自用App去广告
+#!desc=自用App去广告，更新于2023.1.9 @ChangXiaoqiang
 
 [URL Rewrite]
 # > CamHipro
