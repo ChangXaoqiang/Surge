@@ -1,22 +1,28 @@
 #!name=微信小程序去广告
-#!desc=微信小程序去广告2023.1.9 @ChangXiaoqiang
+#!desc=微信小程序去广告2023.1.10 @ChangXiaoqiang
 
 [URL Rewrite]
 # > 微信小程序开屏广告
-^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/ - reject
+^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/141\/20204\/snscosdownload\/ - reject
+^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/131\/20204\/snssvpdownload\/ - reject
 
 # > 车来了
 ^https?:\/\/ipv4\.gdt\.qq\.com\/ - reject
 ^https?:\/\/yun-hl\.3g\.qq\.com\/ - reject
-^https?:\/\/wxa\.wxs\.qq\.com\/ - reject
+^https?:\/\/wxa\.wxs\.qq\.com\/images\/wxapp\/ - reject
 ^https?:\/\/sdk\.e\.qq\.com\/ - reject
 
 # > EMS中国邮政速递物流
 ^https?:\/\/ump\.ems\.com\.cn\/mailAd\/pageModuleImg\/*.jpeg - reject
 
+# > 顺丰
+^https?:\/\/ucmp-static\.sf-express\.com\/sfoss\/ad-act\/infoflow\/ - reject
+
 # > 腾讯微保
 ^https?:\/\/resource\.wesure100\.com\/AT-Config\/config\/*.gif - reject
 ^https?:\/\/resource\.wesure100\.com\/front\/prd\/image\/add_tip_unpay.png - reject
+^https?:\/\/inf-prdapi\.wesure\.cn\/prdapp\/api\/config-service\/QueryConfig\/ - reject
+^https?:\/\/resource\.wesure100\.com\/AT-Config\/config\/*.gif - reject
 
 # > 畅停e行
 ^http?:\/\/qnimg\.zowoyoo\.com\/img\/ - reject
@@ -27,4 +33,4 @@
 ^https?:\/\/bi-mall\.meituan\.com\/mp\/check\/img.gif? - reject
 
 [MITM]
-hostname = %APPEND% bi-mall.meituan.com, wxsnsdythumb.wxs.qq.com, vectorsdk.map.qq.com, ct-bucket.oss-cn-shenzhen.aliyuncs.com, qnimg.zowoyoo.com, resource.wesure100.com, ump.ems.com.cn, wxa.wxs.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
+hostname = %APPEND% ucmp-static.sf-express.com, wxsnsdythumb.wxs.qq.com, resource.wesure100.com, bi-mall.meituan.com, inf-prdapi.wesure.cn, vectorsdk.map.qq.com, ct-bucket.oss-cn-shenzhen.aliyuncs.com, qnimg.zowoyoo.com, resource.wesure100.com, ump.ems.com.cn, wxa.wxs.qq.com, sdk.e.qq.com, yun-hl.3g.qq.com, ipv4.gdt.qq.com
