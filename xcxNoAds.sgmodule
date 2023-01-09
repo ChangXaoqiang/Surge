@@ -3,7 +3,7 @@
 
 [URL Rewrite]
 # > 微信小程序开屏广告
-^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/141\/20204\/snscosdownload\/ - reject
+^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/ - reject
 ^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/131\/20204\/snssvpdownload\/ - reject
 
 # > 车来了
