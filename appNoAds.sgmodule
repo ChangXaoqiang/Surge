@@ -4,7 +4,6 @@
 [URL Rewrite]
 # > IT之家
 ^https?:\/\/api\.zuihuimai\.com\/static\/s11\/ - reject
-^https?:\/\/img\.ithome\.com\/newsuploadfiles\/ - reject
 ^https?:\/\/img\.alicdn\.com\/ - reject
 ^https?:\/\/gw\.alicdn\.com\/bao\/uploaded\/i1\/ - reject
 
