@@ -1,5 +1,5 @@
-#!name=自用App去广告
-#!desc=自用App去广告，更新于2023.1.19 @ChangXiaoqiang
+#!name=App去广告
+#!desc=App去广告，更新于2023.1.19 09:51 @ChangXiaoqiang
 
 [URL Rewrite]
 # > IT之家
@@ -45,12 +45,13 @@
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - reject
 
 # > 百度地图
+^https?:\/\/hmma.baidu.com\/app.gif - reject
+^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/908e9d3d17adb9f3657aef535a4e4ece.gif - reject
+^https?:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/tam-ogel\/*.jpg - reject
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
-^https?:\/\/dss0\.bdstatic\.com\/ - reject
-^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/ - reject
-^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/ - reject
-^https?:\/\/g\.cn\.miaozhen\.com\/ - reject
-
+^https?:\/\/nsclick\.baidu\.com\/ - reject
+^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - reject
+^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - reject
 
 # > 12306
 ^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - reject
@@ -70,4 +71,4 @@
 12306去广告 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% ilce.alicdn.com, carowner-default.cdn.bcebos.com, carowner.baidu.com, mapcarowner-gz.cdn.bcebos.com, www.ithome.com, gw.alicdn.com, img.alicdn.com, img.ithome.com, p3-be-pack-sign.pglstatp-toutiao.com, p9-be-pack-sign.pglstatp-toutiao.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com, sns.amap.com
+hostname = %APPEND% nsclick.baidu.com, hmma.baidu.com, ilce.alicdn.com, carowner-default.cdn.bcebos.com, carowner.baidu.com, mapcarowner-gz.cdn.bcebos.com, www.ithome.com, gw.alicdn.com, img.alicdn.com, img.ithome.com, p3-be-pack-sign.pglstatp-toutiao.com, p9-be-pack-sign.pglstatp-toutiao.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com, sns.amap.com
