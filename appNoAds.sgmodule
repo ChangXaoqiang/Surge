@@ -40,11 +40,9 @@
 
 # > 高德地图
 ^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - reject
-^https?:\/\/sns\.amap\.com\/ws\/msgbox\/ - reject
 ^https?:\/\/optimus-ads\.amap\.com\/ - reject
 ^https?:\/\/aid\.m\.taobao\.com\/ - reject
-^https?:\/\/cache\.amap\.com\/ - reject
-^https?:\/\/m5\.amap\.com\/ - reject
+^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - reject
 
 # > 百度地图
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
