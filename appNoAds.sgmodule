@@ -49,6 +49,7 @@
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/908e9d3d17adb9f3657aef535a4e4ece.gif - reject
 ^https?:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/tam-ogel\/*.jpg - reject
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
+^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - reject
 ^https?:\/\/nsclick\.baidu\.com\/ - reject
 ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - reject
 ^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - reject
