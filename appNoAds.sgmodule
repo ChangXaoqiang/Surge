@@ -1,5 +1,5 @@
 #!name=App去广告
-#!desc=App去广告，更新于2023.1.19 09:51 @ChangXiaoqiang
+#!desc=App去广告，更新于2023.1.19 11:00 @ChangXiaoqiang
 
 [URL Rewrite]
 # > IT之家
@@ -45,7 +45,7 @@
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - reject
 
 # > 百度地图
-^https?:\/\/hmma.baidu.com\/app.gif - reject
+^https?:\/\/hmma.baidu.com\/ - reject
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/908e9d3d17adb9f3657aef535a4e4ece.gif - reject
 ^https?:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/tam-ogel\/*.jpg - reject
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
