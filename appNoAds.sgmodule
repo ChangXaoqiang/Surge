@@ -1,5 +1,5 @@
 #!name=App去广告
-#!desc=App去广告，更新于2023.1.19 15:12 @ChangXiaoqiang
+#!desc=App去广告，更新于2023.1.19 16:46 @ChangXiaoqiang
 
 [URL Rewrite]
 # > 360手机卫士
@@ -54,7 +54,6 @@
 ^https?:\/\/hmma.baidu.com\/ - reject
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/908e9d3d17adb9f3657aef535a4e4ece.gif - reject
 ^https?:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/tam-ogel\/*.jpg - reject
-^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/ - reject
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - reject
 ^https?:\/\/nsclick\.baidu\.com\/ - reject
 ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - reject
