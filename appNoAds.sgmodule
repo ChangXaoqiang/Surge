@@ -52,14 +52,6 @@
 ^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/ - reject
 ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/ - reject
 ^https?:\/\/g\.cn\.miaozhen\.com\/ - reject
-^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/periphery\/default\/iosmeishitopbanner.gif - reject
-^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/09450049407afd85c782dae0bc3ca928.jpg - reject
-^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/65c7b37f791beb6b154899870033bc71.png - reject
-^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - reject
-^https?:\/\/mapcarowner-gz\.cdn\.bcebos\.com\/default\/67acd187880a08ecc1bc2ef781520a6e.png - reject
-^https?:\/\/carowner\.baidu\.com\/hotel\/static\/img\/coupon.8ac8ccd0.png - reject
-^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/rec\/search\/default\/doudi.png - reject
-^https?:\/\/carowner-default\.cdn\.bcebos\.com\/default/*.png - reject
 
 
 # > 12306
