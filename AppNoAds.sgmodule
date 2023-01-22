@@ -1,5 +1,6 @@
 #!name=App去广告
-#!desc=对自己常用的一些App去掉广告，更新于2023.1.19 16:51 @ChangXiaoqiang
+#!desc=对自己常用的一些App去掉广告，更新于2023.1.22 15:00 @ChangXiaoqiang
+#!system=ios
 
 [URL Rewrite]
 # > 360手机卫士
