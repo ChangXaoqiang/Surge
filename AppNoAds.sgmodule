@@ -3,76 +3,76 @@
 
 [URL Rewrite]
 # > 360手机卫士
-^https?:\/\/huodong\.ios\.shouji\.360\.cn\/v4\/ - reject
-^http?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/tos-cn-p-0051\/ - reject
-^https?:\/\/pgdt\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/ - reject
-^http?:\/\/p26-be-pack-sign\.pglstatp-toutiao\.com\/web\.business\.image\/ - reject
+^https?:\/\/huodong\.ios\.shouji\.360\.cn\/v4\/ - REJECT-DROP
+^http?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/tos-cn-p-0051\/ - REJECT-DROP
+^https?:\/\/pgdt\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/ - REJECT-DROP
+^http?:\/\/p26-be-pack-sign\.pglstatp-toutiao\.com\/web\.business\.image\/ - REJECT-DROP
 
 # > IT之家
-^https?:\/\/api\.zuihuimai\.com\/static\/s11\/2022-nhj\/ - reject
-^https?:\/\/img\.alicdn\.com\/ - reject
-^https?:\/\/gw\.alicdn\.com\/ - reject
-^https?:\/\/www\.ithome\.com\/0\/ - reject
-^https?:\/\/img\.ithome\.com\/newsuploadfiles/*/*/*?x-bce-process=image\/format\/ - reject
+^https?:\/\/api\.zuihuimai\.com\/static\/s11\/2022-nhj\/ - REJECT-DROP
+^https?:\/\/img\.alicdn\.com\/ - REJECT-DROP
+^https?:\/\/gw\.alicdn\.com\/ - REJECT-DROP
+^https?:\/\/www\.ithome\.com\/0\/ - REJECT-DROP
+^https?:\/\/img\.ithome\.com\/newsuploadfiles/*/*/*?x-bce-process=image\/format\/ - REJECT-DROP
 
 # > CamHipro
-^https?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/ - reject
-^https?:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ - reject
+^https?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT-DROP
+^https?:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT-DROP
 
 # > QQ空间/QQ
-^https?:\/\/h\.trace\.qq\.com\/ - reject
-^https?:\/\/heic\.alicdn\.com\/ - reject
-^https?:\/\/xc\.gdt\.qq\.com\/ - reject
-^https?:\/\/lp\.pinduoduo\.com\/ - reject
-^https?:\/\/lpcdn\.pinduoduo\.com\/ - reject
-^https?:\/\/pgdt\.gtimg\.cn\/ - reject
+^https?:\/\/h\.trace\.qq\.com\/ - REJECT-DROP
+^https?:\/\/heic\.alicdn\.com\/ - REJECT-DROP
+^https?:\/\/xc\.gdt\.qq\.com\/ - REJECT-DROP
+^https?:\/\/lp\.pinduoduo\.com\/ - REJECT-DROP
+^https?:\/\/lpcdn\.pinduoduo\.com\/ - REJECT-DROP
+^https?:\/\/pgdt\.gtimg\.cn\/ - REJECT-DROP
 
 # > 彩云天气
-^https?:\/\/cdn-w\.caiyunapp\.com\/ - reject
-^https?:\/\/ad\.caiyunapp\.com\/ - reject
+^https?:\/\/cdn-w\.caiyunapp\.com\/ - REJECT-DROP
+^https?:\/\/ad\.caiyunapp\.com\/ - REJECT-DROP
 
 # > 妈妈网孕育
-^https?:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ - reject
-^https?:\/\/cdn-act2\.cdnmama\.com\/ - reject
-^https?:\/\/pt-images*\.cdnmama\.com\/ - reject
-^https?:\/\/qimg\.cdnmama\.com\/ - reject
+^https?:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ - REJECT-DROP
+^https?:\/\/cdn-act2\.cdnmama\.com\/ - REJECT-DROP
+^https?:\/\/pt-images*\.cdnmama\.com\/ - REJECT-DROP
+^https?:\/\/qimg\.cdnmama\.com\/ - REJECT-DROP
 
 # > 美团外卖
-^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg - reject
-^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - reject
+^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg - REJECT-DROP
+^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - REJECT-DROP
 
 # > 饿了么
-^https?:\/\/cube\.elemecdn\.com\/ - reject
+^https?:\/\/cube\.elemecdn\.com\/ - REJECT-DROP
 
 # > 高德地图
-^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - reject
-^https?:\/\/optimus-ads\.amap\.com\/ - reject
-^https?:\/\/aid\.m\.taobao\.com\/ - reject
-^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - reject
+^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - REJECT-DROP
+^https?:\/\/optimus-ads\.amap\.com\/ - REJECT-DROP
+^https?:\/\/aid\.m\.taobao\.com\/ - REJECT-DROP
+^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - REJECT-DROP
 
 # > 百度地图
-^https?:\/\/hmma.baidu.com\/ - reject
-^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.gif - reject
-^https?:\/\/dss0.bdstatic.com\/ - reject
-^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - reject
-^https?:\/\/nsclick\.baidu\.com\/ - reject
-^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - reject
-^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - rejectz
-^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/periphery\/default\/*.gif - reject
-^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/65c7b37f791beb6b154899870033bc71.png - reject
+^https?:\/\/hmma.baidu.com\/ - REJECT-DROP
+^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.gif - REJECT-DROP
+^https?:\/\/dss0.bdstatic.com\/ - REJECT-DROP
+^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - REJECT-DROP
+^https?:\/\/nsclick\.baidu\.com\/ - REJECT-DROP
+^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - REJECT-DROP
+^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - REJECT-DROPz
+^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/periphery\/default\/*.gif - REJECT-DROP
+^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/65c7b37f791beb6b154899870033bc71.png - REJECT-DROP
 
 # > 12306
-^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - reject
-^https?:\/\/ad\.12306\.cn\/ad\/ser\/ - reject
+^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - REJECT-DROP
+^https?:\/\/ad\.12306\.cn\/ad\/ser\/ - REJECT-DROP
 
 # > 去哪网
-^https:\/\/qde\.qunar\.com\/preload - reject
+^https:\/\/qde\.qunar\.com\/preload - REJECT-DROP
 
 # > 飞猪旅行
-^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.allresource\/ - reject
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.allresource\/ - REJECT-DROP
 
 # > 菜鸟裹裹
-^https?:\/\/ilce\.alicdn\.com\/minolta\/374884\/0\/ - reject
+^https?:\/\/ilce\.alicdn\.com\/minolta\/374884\/0\/ - REJECT-DROP
 
 [Script]
 #12306去广告这个脚本是借鉴的，具体原作者不清楚，在电报群里复制粘贴的
