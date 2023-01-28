@@ -3,6 +3,14 @@
 #!system=ios
 
 [URL Rewrite]
+# > 嘀嗒拼车
+^https?:\/\/img\.didapinche\.com\/pics\/\/g\/ - REJECT-DROP
+^https?:\/\/capis-4\.didapinche\.com\/ad\/ - REJECT-DROP
+^https?:\/\/capis-4\.didapinche\.com\/adbase\/ - REJECT-DROP
+
+# > 滴滴打车
+^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/ - REJECT-DROP
+
 # > 360手机卫士
 ^https?:\/\/huodong\.ios\.shouji\.360\.cn\/v4\/ - REJECT-DROP
 ^http?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/tos-cn-p-0051\/ - REJECT-DROP
@@ -19,6 +27,8 @@
 # > CamHipro
 ^https?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT-DROP
 ^https?:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT-DROP
+^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/ - REJECT-DROP
+^https?:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ - REJECT-DROP
 
 # > QQ空间/QQ
 ^https?:\/\/h\.trace\.qq\.com\/ - REJECT-DROP
@@ -46,25 +56,27 @@
 ^https?:\/\/cube\.elemecdn\.com\/ - REJECT-DROP
 
 # > 高德地图
-^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - REJECT-DROP
+^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/ - REJECT-DROP
 ^https?:\/\/optimus-ads\.amap\.com\/ - REJECT-DROP
 ^https?:\/\/aid\.m\.taobao\.com\/ - REJECT-DROP
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - REJECT-DROP
 
 # > 百度地图
-^https?:\/\/hmma.baidu.com\/ - REJECT-DROP
+^https?:\/\/hmma\.baidu\.com\/*.gif - REJECT-DROP
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.gif - REJECT-DROP
-^https?:\/\/dss0.bdstatic.com\/ - REJECT-DROP
+^https?:\/\/dss0\.bdstatic\.com\/ - REJECT-DROP
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - REJECT-DROP
 ^https?:\/\/nsclick\.baidu\.com\/ - REJECT-DROP
 ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - REJECT-DROP
-^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - REJECT-DROPz
+^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - REJECT-DROP
 ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/periphery\/default\/*.gif - REJECT-DROP
-^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/65c7b37f791beb6b154899870033bc71.png - REJECT-DROP
+^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/efba43686f5325057f2ee0d29d170bd2.png - REJECT-DROP
 
 # > 12306
 ^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - REJECT-DROP
 ^https?:\/\/ad\.12306\.cn\/ad\/ser\/ - REJECT-DROP
+^https?:\/\/mobile\.12306\.cn\/otsmobile\/app\/mas\/loggw\/logUpload.do - REJECT-DROP
+^https?:\/\/mobile\.12306\.cn\/otsmobile\/h5\/otsbussiness\/travelPageImg\/ - REJECT-DROP
 
 # > 去哪网
 ^https:\/\/qde\.qunar\.com\/preload - REJECT-DROP
@@ -80,4 +92,4 @@
 12306去广告 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% p26-be-pack-sign.pglstatp-toutiao.com, pgdt.ugdtimg.com, huodong.ios.shouji.360.cn, nsclick.baidu.com, hmma.baidu.com, ilce.alicdn.com, carowner-default.cdn.bcebos.com, carowner.baidu.com, mapcarowner-gz.cdn.bcebos.com, www.ithome.com, gw.alicdn.com, img.alicdn.com, img.ithome.com, p3-be-pack-sign.pglstatp-toutiao.com, p9-be-pack-sign.pglstatp-toutiao.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com, sns.amap.com
+hostname = %APPEND% capis-4.didapinche.com, img.didapinche.com, img-ys011.didistatic.com, sf3-fe-tos.pglstatp-toutiao.com, api-access.pangolin-sdk-toutiao.com, p26-be-pack-sign.pglstatp-toutiao.com, pgdt.ugdtimg.com, huodong.ios.shouji.360.cn, nsclick.baidu.com, hmma.baidu.com, ilce.alicdn.com, carowner-default.cdn.bcebos.com, carowner.baidu.com, mapcarowner-gz.cdn.bcebos.com, www.ithome.com, gw.alicdn.com, img.alicdn.com, img.ithome.com, p3-be-pack-sign.pglstatp-toutiao.com, p9-be-pack-sign.pglstatp-toutiao.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, mobile.12306.cn, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com, sns.amap.com
