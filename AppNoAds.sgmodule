@@ -1,5 +1,5 @@
 #!name=App去广告
-#!desc=对自己常用的一些App去掉广告，更新于2023.1.22 15:00 @ChangXiaoqiang
+#!desc=对自己常用的一些App去掉广告 @ChangXiaoqiang
 #!system=ios
 
 [URL Rewrite]
@@ -49,7 +49,7 @@
 ^https?:\/\/qimg\.cdnmama\.com\/ - REJECT-DROP
 
 # > 美团外卖
-^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg - REJECT-DROP
+^https?:\/\/img\.meituan\.net\/bizad\/*.jpg - REJECT-DROP
 ^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - REJECT-DROP
 
 # > 饿了么
@@ -62,7 +62,7 @@
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - REJECT-DROP
 
 # > 百度地图
-^https?:\/\/hmma\.baidu\.com\/*.gif - REJECT-DROP
+^https?:\/\/hmma\.baidu\.com\/ - REJECT-DROP
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.gif - REJECT-DROP
 ^https?:\/\/dss0\.bdstatic\.com\/ - REJECT-DROP
 ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - REJECT-DROP
@@ -75,11 +75,11 @@
 # > 12306
 ^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - REJECT-DROP
 ^https?:\/\/ad\.12306\.cn\/ad\/ser\/ - REJECT-DROP
-^https?:\/\/mobile\.12306\.cn\/otsmobile\/app\/mas\/loggw\/logUpload.do - REJECT-DROP
+^https?:\/\/mobile\.12306\.cn\/otsmobile\/app\/mas\/loggw\/ - REJECT-DROP
 ^https?:\/\/mobile\.12306\.cn\/otsmobile\/h5\/otsbussiness\/travelPageImg\/ - REJECT-DROP
 
 # > 去哪网
-^https:\/\/qde\.qunar\.com\/preload - REJECT-DROP
+^https:\/\/qde\.qunar\.com\/preload\/ - REJECT-DROP
 
 # > 飞猪旅行
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.allresource\/ - REJECT-DROP
