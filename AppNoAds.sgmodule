@@ -3,8 +3,8 @@
 #!system=ios
 
 [URL Rewrite]
-# > 中国移动 app
-^https?:\/\/res\.app\.coc\.10086\.cn\/ - REJECT-DROP
+# 中国移动开屏
+^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(init\/startInit|emotionMarket) - reject
 
 # > 嘀嗒拼车
 ^https?:\/\/img\.didapinche\.com\/pics\/\/g\/ - REJECT-DROP
