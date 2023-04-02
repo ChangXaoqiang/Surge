@@ -3,6 +3,10 @@
 #!system=ios
 
 [URL Rewrite]
+# 中国电信去广告
+^https?:\/\/cloud\.189\.cn\/include\/splash\/ -reject
+^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation - reject
+
 # 中国移动开屏
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(init\/startInit|emotionMarket) - reject
 
@@ -99,4 +103,4 @@ DOMAIN-SUFFIX, mp.weixin.qq.com, REJECT
 12306去广告 = type=http-response,pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList,requires-body=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/12306.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% client.app.coc.10086.cn, mp.weixin.qq.com, adtrack.xiaojukeji.com, capis-4.didapinche.com, img.didapinche.com, img-ys011.didistatic.com, sf3-fe-tos.pglstatp-toutiao.com, api-access.pangolin-sdk-toutiao.com, p26-be-pack-sign.pglstatp-toutiao.com, pgdt.ugdtimg.com, huodong.ios.shouji.360.cn, nsclick.baidu.com, hmma.baidu.com, ilce.alicdn.com, carowner-default.cdn.bcebos.com, carowner.baidu.com, mapcarowner-gz.cdn.bcebos.com, www.ithome.com, gw.alicdn.com, img.alicdn.com, img.ithome.com, p3-be-pack-sign.pglstatp-toutiao.com, p9-be-pack-sign.pglstatp-toutiao.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, mobile.12306.cn, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com, sns.amap.com
+hostname = %APPEND% cloud.189.cn, zt-app.go189.cn, client.app.coc.10086.cn, mp.weixin.qq.com, adtrack.xiaojukeji.com, capis-4.didapinche.com, img.didapinche.com, img-ys011.didistatic.com, sf3-fe-tos.pglstatp-toutiao.com, api-access.pangolin-sdk-toutiao.com, p26-be-pack-sign.pglstatp-toutiao.com, pgdt.ugdtimg.com, huodong.ios.shouji.360.cn, nsclick.baidu.com, hmma.baidu.com, ilce.alicdn.com, carowner-default.cdn.bcebos.com, carowner.baidu.com, mapcarowner-gz.cdn.bcebos.com, www.ithome.com, gw.alicdn.com, img.alicdn.com, img.ithome.com, p3-be-pack-sign.pglstatp-toutiao.com, p9-be-pack-sign.pglstatp-toutiao.com, h.trace.qq.com, heic.alicdn.com, xc.gdt.qq.com, lp.pinduoduo.com, lpcdn.pinduoduo.com, pgdt.gtimg.cn, kepler.jd.com, adashxgc.ut.taobao.com, api.zuihuimai.com, cdn-w.caiyunapp.com, ad.caiyunapp.com, sf3-fe-tos.pglstatp-toutiao.com, cdn-act2.cdnmama.com, pt-images*.cdnmama.com, qimg.cdnmama.com, dig.lianjia.com, acs.m.taobao.com, qde.qunar.com, apps.api.ke.com, cube.elemecdn.com, cache.amap.com, g.cn.miaozhen.com, mobile.12306.cn, ad.12306.cn, map-mobile-opnimg.cdn.bcebos.com, dss0.bdstatic.com, cjh-amis.cdn.bcebos.com, map-mobile-resources.cdn.bcebos.com, aid.m.taobao.com, optimus-ads.amap.com, img.meituan.net, wmapi.meituan.com, m5.amap.com, sns.amap.com
