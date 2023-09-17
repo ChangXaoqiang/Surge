@@ -58,5 +58,5 @@
 ^https:\/\/(sinaurl|t)\.cn\/ url script-response-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/noRedirect.js
 
 
-[MITM]
+[General]
 hostname = %APPEND% *.weibo.cn, *.weibo.com, sinaurl.cn, t.cn weibo.cn
