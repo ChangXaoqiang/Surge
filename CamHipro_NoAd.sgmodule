@@ -11,6 +11,8 @@
 ^https?:\/\/mktm\.jd\.com\/ - reject
 ^https?:\/\/.+\.lapin365\.com\/ - reject
 ^https?:\/\/adashbc\.ut\.taobao\.com\/ - reject
+^https?:\/\/.+\.360buyimg\.com\/ - reject
+^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ - reject
 
 [MITM]
-hostname = %APPEND% mon.zijieapi.com, mobads-logs.baidu.com, e.kuaishou.cn, adukwai.com, mktm.jd.com, img.lapin365.com, adashbc.ut.taobao.com
+hostname = %APPEND% mon.zijieapi.com, mobads-logs.baidu.com, open.e.kuaishou.cn, adukwai.com, mktm.jd.com, lapin365.com, adashbc.ut.taobao.com, 360buyimg.com, mobads-pre-config.cdn.bcebos.com
