@@ -1,15 +1,16 @@
 #!name=CamHipro_NoAd
 #!desc=去掉CamHipro的开屏广告   
 #!system=ios
+#!icon=https://raw.githubusercontent.com/SleepyHeeead/subconverter-config/master/icons/camhipro.png
 
-[Rule]
-DOMAIN-SUFFIX,mon.zijieapi.com,REJECT // Added for: mon.zijieapi.com:443
-DOMAIN,mobads-logs.baidu.com,REJECT // Added for: https://mobads-logs.baidu.com/dz.zb?type=386&adSrc=0&adType=no&apid=9130784&appid=ed5e7759&appsid=ed5e7759&available=true&brand=ios&cuid=Pj-9rAmzP164PWw9nhRsnjP-nhD1rHfvn10znADYm1R3mH0zrHw-nzfb&iosSystemVersion=18.0&model=iPhone16%2C1&net=100&os=ios&osv=18.0&pack=com.hichip.camPro&sn=nj0snj0snj0Vnj0snaYsnj0sQH0snj0Vnj0snj0snj0snj0s&t0_prepare=3.435850&t1_request=-1719770971890.638916&t2_load=0.000000&t3_all=-1719770971887.202881&tp=Apple%23iPhone%2015%20Pro&ts=1719770972646.227783&v=ios_5.35_1.0.0&vd=6c31ca4aeaf3b46294b19bf978abaf26&
-DOMAIN-SUFFIX,e.kuaishou.cn,REJECT // Added for: open.e.kuaishou.cn:443
-DOMAIN-SUFFIX,adukwai.com,REJECT // Added for: p2-lm.adukwai.com:443
-DOMAIN,mktm.jd.com,REJECT // Added for: mktm.jd.com:443
-DOMAIN-SUFFIX,lapin365.com,REJECT // Added for: https://img.lapin365.com/zuihuimai/static/s11/2024-618/tb1.png
-DOMAIN,adashbc.ut.taobao.com,REJECT // Added for: adashbc.ut.taobao.com:443
+[URL Rewrite]
+^https?:\/\/mon\.zijieapi\.com\/ - reject
+^https?:\/\/mobads-logs\.baidu\.com\/ - reject
+^https?:\/\/open\.e\.kuaishou\.cn\/ - rejec
+^https?:\/\/.+\.adukwai.com\/ - reject
+^https?:\/\/mktm\.jd\.com\/ - reject
+^https?:\/\/.+\.lapin365\.com\/ - reject
+^https?:\/\/adashbc\.ut\.taobao\.com\/ - reject
 
 [MITM]
 hostname = %APPEND% mon.zijieapi.com, mobads-logs.baidu.com, e.kuaishou.cn, adukwai.com, mktm.jd.com, img.lapin365.com, adashbc.ut.taobao.com
